@@ -1,6 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import React from "react";
+import { Htag } from "@/components";
 
 export default function Home(): React.JSX.Element {
   return (
@@ -12,11 +12,9 @@ export default function Home(): React.JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Добро пожаловать на главную страницу приложения</h1>
-        <p>
-            Это топ приложение на NextJS pages. Страница главная, здесь можно
-            добавить контент.
-        </p>
+        <Htag tag={"h1"}>Тест H1</Htag>
+        <Htag tag={"h2"} fontWeight={700}>Тест H2</Htag>
+        <Htag tag={"h3"}>Тест H3</Htag>
       </main>
     </>
   );
