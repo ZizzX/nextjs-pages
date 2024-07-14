@@ -1,0 +1,25 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-clean-order"],
+  "rules": {
+    "font-weight-notation": "numeric",
+    "color-hex-length": "long",
+    "order/order": [
+      "rules",
+      "at-rules",
+      "custom-properties",
+      "declarations"
+    ],
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": ["Noto", "Sans"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["**/*.css", "**/*.scss"],
+      "customSyntax": "postcss-scss"
+    }
+  ]
+}

@@ -1,3 +1,27 @@
 {
-  "extends": "next/core-web-vitals"
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react-hooks"],
+  "extends": ["eslint:recommended", "next", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/no-explicit-any": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "object-curly-spacing": ["error", "always"],
+    "max-lines": [
+      "warn",
+        {
+            "max": 200,
+            "skipBlankLines": true,
+            "skipComments": true
+        }
+    ],
+    "no-tabs": "off",
+    "semi": "warn",
+    "array-bracket-spacing": ["error", "never"],
+    "comma-style": ["error", "last"],
+    "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }]
+  }
 }
