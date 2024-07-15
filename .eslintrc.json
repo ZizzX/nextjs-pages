@@ -22,6 +22,7 @@
     "semi": "warn",
     "array-bracket-spacing": ["error", "never"],
     "comma-style": ["error", "last"],
-    "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }]
+    "object-property-newline": ["error", { "allowAllPropertiesOnSameLine": false }],
+    "indent": ["error", "tab", { "SwitchCase": 1, "VariableDeclarator": 1 }]
   }
 }
