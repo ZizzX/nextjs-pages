@@ -13,12 +13,13 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@public/*": ["./public/*"]
     }
   },
   "include": [
-    "svgr.d.ts",
-    "next-env.d.ts",
+    "images.d.ts",
+    "next-env.custom.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"

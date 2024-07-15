@@ -17,7 +17,8 @@ export default function Home(): React.JSX.Element {
 				<Htag tag={"h3"}>Тест H3</Htag>
 
 				<Button>Узнать подробнее</Button>
-				<Button variant="ghost">Читать отзывы</Button>
+				<Button variant="ghost" arrow="right">Читать отзывы</Button>
+				<Button variant="ghost" arrow="down">Читать отзывы</Button>
 				<Button variant="tag">Photoshop</Button>
 
 				<P>

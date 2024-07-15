@@ -46,3 +46,22 @@
 .tag:hover {
     border: 1px solid var(--primary);
 }
+
+.arrow {
+    margin-left: 10px;
+    display: inline-block;
+    transition: var(--transition);
+}
+
+.icon {
+    fill: var(--text);
+    transition: var(--transition);
+}
+
+.down {
+    transform: rotate(90deg);
+}
+
+.button:hover .icon {
+    fill: var(--white);
+}
